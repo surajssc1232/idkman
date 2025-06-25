@@ -47,7 +47,7 @@ export function Bio() {
       </div>
 
       <CardContent style={{ transform: 'translateZ(40px)'}} className="p-0 pt-12 pb-10">
-        <h1 className="text-4xl font-bold tracking-[0.2em] uppercase">Jane Doe</h1>
+        <h1 className="text-4xl font-bold tracking-[0.2em] uppercase">Suraj Chauhan</h1>
         <p className="text-base font-normal font-body text-card-foreground/80 mt-2 tracking-[0.3em] uppercase">Software Engineer</p>
       </CardContent>
 
