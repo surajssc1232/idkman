@@ -1,12 +1,14 @@
 'use client';
 
 import { Bio } from '@/components/devcard/bio';
+import { CursorExplosion } from '@/components/devcard/cursor-explosion';
 import { Footer } from '@/components/devcard/footer';
 import { Header } from '@/components/devcard/header';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-dvh text-foreground">
+      <CursorExplosion />
       <Header />
       <main className="flex-1 flex items-center justify-center p-4">
         <Bio />
