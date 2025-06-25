@@ -14,7 +14,6 @@ interface SkillsProps {
   highlightedSkills: string[];
   isLoading: boolean;
 }
-
 export function Skills({ skills, highlightedSkills, isLoading }: SkillsProps) {
   return (
     <section id="skills" className="w-full py-12 md:py-24 lg:py-32">
