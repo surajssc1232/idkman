@@ -17,8 +17,9 @@ const fontCormorantGaramond = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: 'DevCard',
+  title: 'Suraj chauhan',
   description: 'A dynamic, single-page developer portfolio.',
+  icons: null,
 };
 
 export default function RootLayout({
