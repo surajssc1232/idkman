@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Inter, Cormorant_Garamond } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import { InteractiveBackground } from '@/components/devcard/interactive-background';
 
 const fontInter = Inter({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={cn("font-body antialiased", fontInter.variable, fontCormorantGaramond.variable)}>
+        <InteractiveBackground />
         {children}
         <Toaster />
       </body>
