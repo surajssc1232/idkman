@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 
 export function Experience() {
   return (
-    <section id="experience" className="w-full py-12 md:py-24 lg:py-32 bg-secondary/50">
+    <section id="experience" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -16,10 +16,10 @@ export function Experience() {
           <Card>
             <CardHeader>
               <CardTitle>Senior Software Engineer</CardTitle>
-              <CardDescription>Tech Innovations Inc. | 2020 - Present</CardDescription>
+              <CardDescription className="text-card-foreground/80">Tech Innovations Inc. | 2020 - Present</CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
+              <ul className="list-disc list-inside text-card-foreground/80 space-y-2">
                 <li>Led the development of a new microservices-based architecture, improving system scalability by 50%.</li>
                 <li>Mentored junior engineers, fostering a culture of learning and continuous improvement.</li>
                 <li>Implemented a CI/CD pipeline that reduced deployment time by 75%.</li>
@@ -29,10 +29,10 @@ export function Experience() {
           <Card>
             <CardHeader>
               <CardTitle>Software Engineer</CardTitle>
-              <CardDescription>Solutions Co. | 2018 - 2020</CardDescription>
+              <CardDescription className="text-card-foreground/80">Solutions Co. | 2018 - 2020</CardDescription>
             </CardHeader>
             <CardContent>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
+              <ul className="list-disc list-inside text-card-foreground/80 space-y-2">
                 <li>Developed and maintained client-facing web applications using React and Node.js.</li>
                 <li>Collaborated with cross-functional teams to define and ship new features.</li>
                 <li>Refactored legacy code, improving performance and maintainability.</li>

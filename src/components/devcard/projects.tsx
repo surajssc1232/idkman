@@ -23,7 +23,7 @@ interface ProjectsProps {
 
 export function Projects({ projects, highlightedProjects, isLoading }: ProjectsProps) {
   return (
-    <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-secondary/50">
+    <section id="projects" className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -61,7 +61,7 @@ export function Projects({ projects, highlightedProjects, isLoading }: ProjectsP
                 />
                 <CardContent className="p-6">
                   <CardTitle>{project.title}</CardTitle>
-                  <CardDescription className="mt-2">{project.description}</CardDescription>
+                  <CardDescription className="mt-2 text-card-foreground/80">{project.description}</CardDescription>
                 </CardContent>
                 <CardFooter className="p-6">
                   <Button asChild variant="outline">
