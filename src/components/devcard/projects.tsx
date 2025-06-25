@@ -64,7 +64,7 @@ export function Projects({ projects, highlightedProjects, isLoading }: ProjectsP
                   <CardDescription className="mt-2 text-card-foreground/80">{project.description}</CardDescription>
                 </CardContent>
                 <CardFooter className="p-6">
-                  <Button asChild variant="outline">
+                  <Button asChild variant="outline" className="text-foreground">
                     <Link href={project.link} target="_blank" rel="noopener noreferrer">
                       View Project <ArrowUpRight className="ml-2 h-4 w-4" />
                     </Link>
