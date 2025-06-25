@@ -52,22 +52,22 @@ export function Bio() {
       </CardContent>
 
       <div style={{ transform: 'translateZ(30px)'}} className="flex items-center justify-center gap-6">
-        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full">
+        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full hover:bg-transparent transition-transform hover:scale-125">
             <Link href="mailto:hello@example.com">
                 <Mail className="h-5 w-5" />
             </Link>
         </Button>
-        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full">
+        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full hover:bg-transparent transition-transform hover:scale-125">
             <Link href="#" target="_blank">
                 <Github className="h-5 w-5" />
             </Link>
         </Button>
-        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full">
+        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full hover:bg-transparent transition-transform hover:scale-125">
             <Link href="#" target="_blank">
                 <Linkedin className="h-5 w-5" />
             </Link>
         </Button>
-        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full">
+        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full hover:bg-transparent transition-transform hover:scale-125">
             <Link href="#" target="_blank">
                 <Codepen className="h-5 w-5" />
             </Link>
