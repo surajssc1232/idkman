@@ -12,6 +12,8 @@ interface Particle {
   duration: number;
 }
 
+let particleIdCounter = 0;
+
 const createParticle = (x: number, y: number): Particle => {
   const angle = Math.random() * 2 * Math.PI;
   const distance = Math.random() * 50 + 50;
@@ -19,7 +21,7 @@ const createParticle = (x: number, y: number): Particle => {
   const duration = Math.random() * 0.5 + 0.5;
   
   return {
-    id: Date.now() + Math.random(),
+    id: particleIdCounter++,
     x,
     y,
     angle,
