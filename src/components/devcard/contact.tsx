@@ -15,22 +15,22 @@ export function Contact() {
           </div>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             <Button asChild size="lg">
-              <Link href="mailto:hello@example.com">
+              <Link href="mailto:surajssc1232@gmail.com">
                 <Mail className="mr-2 h-4 w-4" /> Email Me
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="#" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/surajssc1232" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-4 w-4" /> GitHub
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="#" target="_blank" rel="noopener noreferrer">
+              <Link href="" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link href="#" target="_blank" rel="noopener noreferrer">
+              <Link href="https://x.com/surajkhahai" target="_blank" rel="noopener noreferrer">
                 <Twitter className="mr-2 h-4 w-4" /> Twitter
               </Link>
             </Button>
