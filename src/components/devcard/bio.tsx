@@ -58,17 +58,17 @@ export function Bio() {
             </Link>
         </Button>
         <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full hover:bg-transparent transition-transform hover:scale-125">
-            <Link href="#" target="_blank">
+            <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
             </Link>
         </Button>
         <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full hover:bg-transparent transition-transform hover:scale-125">
-            <Link href="#" target="_blank">
+            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
             </Link>
         </Button>
         <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full hover:bg-transparent transition-transform hover:scale-125">
-            <Link href="#" target="_blank">
+            <Link href="https://codepen.io" target="_blank" rel="noopener noreferrer">
                 <Codepen className="h-5 w-5" />
             </Link>
         </Button>
