@@ -1,30 +1,43 @@
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Codepen, Github, Linkedin, Mail } from 'lucide-react';
+import Link from "next/link";
 
 export function Bio() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6">
-        <Card className="max-w-3xl mx-auto border-0 shadow-none md:border md:shadow-sm">
-          <CardHeader className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left p-6 md:p-8">
-            <Avatar className="w-24 h-24 md:w-32 md:h-32 border-2 border-primary/10">
-              <AvatarImage src="https://placehold.co/128x128.png" data-ai-hint="profile picture" alt="Developer" />
-              <AvatarFallback>DV</AvatarFallback>
-            </Avatar>
-            <div className="space-y-2">
-              <h1 className="text-3xl font-bold">Jane Doe</h1>
-              <p className="text-muted-foreground text-lg">Full-Stack Developer | AI Enthusiast</p>
-            </div>
-          </CardHeader>
-          <CardContent className="p-6 md:p-8 pt-0 md:pt-0">
-            <p className="text-muted-foreground text-center md:text-left">
-              A passionate Full-Stack Developer with a knack for creating elegant solutions in the least amount of time.
-              Experienced in building and personalizing web applications using modern technologies like React, Next.js, and Node.js.
-              Always curious and ready to tackle new challenges.
-            </p>
-          </CardContent>
-        </Card>
+    <Card className="relative w-full max-w-md bg-card text-card-foreground rounded-lg shadow-2xl p-8 font-headline text-center border-0">
+      <div className="absolute top-4 left-4 text-xs font-body text-card-foreground/70">+1 240.284.6363</div>
+      <div className="absolute top-4 right-4 text-card-foreground/70">
+        <Codepen className="h-6 w-6" />
       </div>
-    </section>
+
+      <CardContent className="p-0 pt-12 pb-10">
+        <h1 className="text-4xl font-bold tracking-[0.2em] uppercase">Jane Doe</h1>
+        <p className="text-base font-normal font-body text-card-foreground/80 mt-2 tracking-[0.3em] uppercase">Software Engineer</p>
+      </CardContent>
+
+      <div className="flex items-center justify-center gap-6">
+        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full">
+            <Link href="mailto:hello@example.com">
+                <Mail className="h-5 w-5" />
+            </Link>
+        </Button>
+        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full">
+            <Link href="#" target="_blank">
+                <Github className="h-5 w-5" />
+            </Link>
+        </Button>
+        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full">
+            <Link href="#" target="_blank">
+                <Linkedin className="h-5 w-5" />
+            </Link>
+        </Button>
+        <Button asChild variant="ghost" size="icon" className="text-card-foreground/70 hover:text-card-foreground rounded-full">
+            <Link href="#" target="_blank">
+                <Codepen className="h-5 w-5" />
+            </Link>
+        </Button>
+      </div>
+    </Card>
   );
 }
